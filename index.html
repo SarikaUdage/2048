@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>2048 Game - Home</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f6f2;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      background-color: #faefc8;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      background-color: #ffeddd;
+      padding: 40px 30px;
+      border-radius: 20px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      height: 250px;
+      width: 300px;
+    }
+
+    .logo {
+      font-size: 3rem;
+      font-weight: bold;
+      color: #776e65;
+      background-color: #fbbf64;
+      margin-top: 50px;
+      padding: 15px 30px;
+      border-radius: 12px;
+      margin-bottom: 30px;
+    }
+
+    .play-btn {
+      padding: 12px 25px;
+      font-size: 1.1rem;
+      background-color: #abaaa9;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .play-btn:hover {
+      background-color: #a28b75;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="logo">2048</div>
+    <button class="play-btn" onclick="goToGame()">Play</button>
+  </div>
+
+  <script>
+    function goToGame() {
+      window.location.href = "game.html";
+    }
+  </script>
+</body>
+</html>

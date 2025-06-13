@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>2048 Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>2048 Game</h1>
+
+  <p>Join the numbers and get to the <strong>2048 tile!</strong></p><br>
+
+  <div class="score-board">
+    <p>Score: <span id="score">0</span></p>
+    <p>Best: <span id="high-score">0</span></p>
+    <div>
+      <button onclick="startGame()">Restart</button>
+      <button onclick="undoMove()">Undo</button>
+    
+    </div>
+  </div>
+
+  <div id="grid-container"></div>
+
+  <div id="game-over" class="hidden">
+    <h2>Game over!</h2>
+    <button onclick="startGame()">Try again</button>
+  </div>
+
+  <div class="how-to-play info-box">
+    <p style="line-height: 25px;"><strong>HOW TO PLAY:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same number touch, they <strong>merge into one!</strong><br>
+      and also you can use <strong>U</strong> to undo your last move.</p>
+  
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
